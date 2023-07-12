@@ -11,7 +11,7 @@ import (
 )
 
 const (
-	concurrencyLimit = 10000
+	concurrencyLimit = 100000
 	requestTimeout   = 60 * time.Second
 )
 
