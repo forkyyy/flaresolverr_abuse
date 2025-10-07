@@ -22,7 +22,7 @@ func main() {
 	}
 
 	url := os.Args[1]
-	ipList, err := readIPsFromFile("fsrr.txt")
+	ipList, err := readIPsFromFile("list.txt")
 	if err != nil {
 		fmt.Println("Error reading IP list:", err)
 		return
