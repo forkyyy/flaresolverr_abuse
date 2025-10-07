@@ -2,7 +2,7 @@
 
 <h3>Coded by forky</h3>
 
-<h4>This is made to abuse open flaresolverr servers</h4>
+<h4>This is made to abuse open flaresolverr servers, never patched, still waiting, if you are getting abused, open an issue on their github repo or make ACL rules on your network.</h4>
 
 
 <h1>Installation:</h1>
@@ -24,7 +24,7 @@ go build -o main main.go
 <h3>Scraping for Flaresolverr servers (change the API Key on scraper.js)</h3><br>
 
 ```sh
-node scraper.js > fsrr.txt
+node scraper.js > list.txt
 ```
 
 <h3>Usage:</h3><br>
