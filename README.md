@@ -1,37 +1,22 @@
-<h2>Golang Flaresolverr Abuser</h2>
+# FlareSolverr — Research & Defensive Notes
 
-<h3>Coded by forky</h3>
+> NOTE: This repository has been reoriented for defensive research, analysis, and security guidance.
+> Offensive scripts and abuse tools have been kept for helping mitigate the vulnerabilities, if not, already patched, thankfully!
 
-<h4>This is made to abuse open flaresolverr servers, never patched, still waiting, if you are getting abused, open an issue on their github repo or make ACL rules on your network.</h4>
+## Purpose
+This repository contains tools used by cyber actors to abuse **FlareSolverr** instances. The focus is on **detection**, **mitigation**, and secure deployment practices to reduce the risk of abuse.
 
+## Recommended hardening (summary)
+- Enable API key authentication and rotate keys regularly.
+- Restrict access via IP allowlists and reverse proxy ACLs.
+- Apply rate limits per IP/session and limit concurrent browser sessions.
+- Monitor logs, session counts and abnormal patterns; alert on anomalies.
+- Keep FlareSolverr and components up to date.
 
-<h1>Installation:</h1>
+## Responsible behaviour
+- Use the materials only on systems you own or where you have explicit authorization.
+- Do not use this repo to scan or attack third-party services.
+- If you discover an exposed instance, notify the owner or the upstream project through a responsible disclosure channel.
 
-```sh
-apt install snap snapd -y
-snap install go --classic
-curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
-sudo apt -y install nodejs
-npm i axios
-```
-
-<h1>Setup:</h1>
-
-```sh
-go build -o main main.go
-```
-
-<h3>Scraping for Flaresolverr servers (change the API Key on scraper.js)</h3><br>
-
-```sh
-node scraper.js > list.txt
-```
-
-<h3>Usage:</h3><br>
-
-```sh
-./main https://website.com
-```
-
-
-## Hope this gets fixed soon, as its allowing people to get free browser sessions
+## Contact
+For coordination, responsible disclosure or collaboration: forkcontato@gmail.com
