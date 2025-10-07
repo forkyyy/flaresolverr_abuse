@@ -3,7 +3,7 @@ const axios = require('axios');
 const baseUrl = 'https://search.censys.io/api/v2/hosts/search';
 const headers = {
   'Accept': 'application/json',
-  'Authorization': 'Basic YTcxYTg0NTAtZmU5NC00MjVjLWIwNTQtMzFkYjc3NWUyZDViOmFaVDJ6ejdoeFRVMVlqSFd6d2VnNzdDTHFKMGVjelVu'
+  'Authorization': 'Basic [BASE64 KEY]'
 };
 
 function sendRequest(url) {
